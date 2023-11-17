@@ -32,7 +32,7 @@ public class CandidateController {
 		
 		if (cndServ.getCandByUser(email) != null) {
 					
-			session.setAttribute("msg", "Already Voted");
+			session.setAttribute("msg", "Already Voted anywhere");
 		}
 		else
 		{
@@ -58,7 +58,7 @@ public class CandidateController {
 
 			cndServ.addCandidate(cnd);
 			
-			session.setAttribute("msg", "Successfully Voted...");
+			session.setAttribute("msg", "Successfully Voting done...");
 		}
 		
 		return "redirect:user/";
